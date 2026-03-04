@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -16,12 +17,26 @@ function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-8">
-          <a className="text-white hover:text-red-600 text-sm font-bold uppercase tracking-widest" href="#">Home</a>
-          <a className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest" href="#">Inventory</a>
-          <a className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest" href="#">About</a>
-          <a className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest" href="#">Services</a>
-          <a className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest" href="#">Contact</a>
-        </div>
+  <Link className="text-white hover:text-red-600 text-sm font-bold uppercase tracking-widest" to="/">
+    Home
+  </Link>
+
+  <Link className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest" to="/inventory">
+    Inventory
+  </Link>
+
+  <Link className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest" to="/about">
+    About
+  </Link>
+
+  <Link className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest" to="/services">
+    Services
+  </Link>
+
+  <Link className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest" to="/contact">
+    Contact
+  </Link>
+</div>
 
         <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-2.5 text-sm font-black transition-all">
           LOGIN
