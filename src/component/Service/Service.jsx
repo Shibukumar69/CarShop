@@ -9,8 +9,6 @@ import {
 } from "react-icons/fa";
 function Service() {
 return ( <div className="bg-[#0a0a0a] text-white font-sans">
-
-```
   {/* HERO SECTION */}
   <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black">
     <div className="absolute inset-0 z-0">

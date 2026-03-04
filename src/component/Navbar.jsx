@@ -9,8 +9,8 @@ function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
 
         {/* LOGO */}
-        <div className="flex items-center gap-2 text-white font-semibold text-lg">
-          <FaCar className="text-white text-xl" />
+        <div className="flex items-center gap-2 text-white font-semibold text-2xl">
+          <FaCar className="text-red-600 text-4xl" />
           Lucky Cars
         </div>
 
@@ -21,8 +21,8 @@ function Navbar() {
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "text-white border-b-2 border-white pb-1"
-                : "text-gray-400 hover:text-white transition"
+                ? "text-white border-b-2 border-white pb-1 text-xl"
+                : "text-gray-400 hover:text-red-600 transition"
             }
           >
             Home
@@ -32,8 +32,8 @@ function Navbar() {
             to="/inventory"
             className={({ isActive }) =>
               isActive
-                ? "text-white border-b-2 border-white pb-1"
-                : "text-gray-400 hover:text-white transition"
+                ? "text-white border-b-2 border-white pb-1 text-xl"
+                : "text-gray-400 hover:text-red-600 transition"
             }
           >
             Inventory
@@ -43,8 +43,8 @@ function Navbar() {
             to="/services"
             className={({ isActive }) =>
               isActive
-                ? "text-white border-b-2 border-white pb-1"
-                : "text-gray-400 hover:text-white transition"
+                ? "text-white border-b-2 border-white pb-1 text-xl"
+                : "text-gray-400 hover:text-red-600 transition"
             }
           >
             Services
@@ -54,8 +54,8 @@ function Navbar() {
             to="/about"
             className={({ isActive }) =>
               isActive
-                ? "text-white border-b-2 border-white pb-1"
-                : "text-gray-400 hover:text-white transition"
+                ? "text-white border-b-2 border-white pb-1 text-xl"
+                : "text-gray-400 hover:text-red-600 transition"
             }
           >
             About
@@ -65,8 +65,8 @@ function Navbar() {
             to="/contact"
             className={({ isActive }) =>
               isActive
-                ? "text-white border-b-2 border-white pb-1"
-                : "text-gray-400 hover:text-white transition"
+                ? "text-white border-b-2 border-white pb-1 text-xl"
+                : "text-gray-400 hover:text-red-600 transition"
             }
           >
             Contact
