@@ -11,7 +11,6 @@ import {
 function Contact() {
 return ( <div className="bg-[#0a0a0a] text-white">
 
-```
   {/* HERO SECTION */}
   <section className="relative h-[50vh] flex items-center justify-center overflow-hidden bg-black">
     <div className="absolute inset-0 z-0">
