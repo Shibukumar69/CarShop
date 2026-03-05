@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaCar,
   FaShareAlt,
@@ -46,7 +47,7 @@ function Footer() {
         </div>
 
         {/* Quick Links */}
-      <div>
+    <div>
   <h4 className="text-white font-black uppercase tracking-widest text-sm mb-8 italic">
     Quick Links
   </h4>
@@ -59,12 +60,12 @@ function Footer() {
       { name: "Sell Your Car", link: "/sell" },
     ].map((item, i) => (
       <li key={i}>
-        <a
-          href={item.link}
+        <Link
+          to={item.link}
           className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest transition-all"
         >
           {item.name}
-        </a>
+        </Link>
       </li>
     ))}
   </ul>
