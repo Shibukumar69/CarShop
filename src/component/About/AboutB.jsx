@@ -46,30 +46,29 @@ function AboutB() {
 
 
         {/* QUICK LINKS */}
-        <div>
+         <div>
+  <h4 className="text-white font-black uppercase tracking-widest text-sm mb-8 italic">
+    Quick Links
+  </h4>
 
-          <h4 className="text-white font-black uppercase tracking-[0.2em] text-sm mb-8 italic">
-            Quick Links
-          </h4>
-
-          <ul className="space-y-4">
-
-            {["Inventory", "About Us", "Our Services", "Sell Your Car"].map(
-              (item, i) => (
-                <li key={i}>
-                  <a
-                    className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest transition-all"
-                    href="#"
-                  >
-                    {item}
-                  </a>
-                </li>
-              )
-            )}
-
-          </ul>
-
-        </div>
+  <ul className="space-y-4">
+    {[
+      { name: "Inventory", link: "/inventory" },
+      { name: "About Us", link: "/about" },
+      { name: "Our Services", link: "/services" },
+      { name: "Sell Your Car", link: "/sell" },
+    ].map((item, i) => (
+      <li key={i}>
+        <a
+          href={item.link}
+          className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest transition-all"
+        >
+          {item.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
 
 
         {/* CONTACT */}

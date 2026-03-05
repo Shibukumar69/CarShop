@@ -60,7 +60,7 @@ function partB() {
               <li>
                 <a
                   className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest"
-                  href="#"
+                  href="/inventory"
                 >
                   Inventory
                 </a>
@@ -69,7 +69,7 @@ function partB() {
               <li>
                 <a
                   className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest"
-                  href="#"
+                  href="/about"
                 >
                   About Us
                 </a>
@@ -78,7 +78,7 @@ function partB() {
               <li>
                 <a
                   className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest"
-                  href="#"
+                  href="/services"
                 >
                   Our Services
                 </a>
@@ -87,7 +87,7 @@ function partB() {
               <li>
                 <a
                   className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest"
-                  href="#"
+                  href="/sell"
                 >
                   Sell Your Car
                 </a>
