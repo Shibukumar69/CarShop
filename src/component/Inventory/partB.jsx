@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function partB() {
   return (
     <div>
@@ -51,50 +51,49 @@ function partB() {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h4 className="text-white font-black uppercase tracking-[0.2em] text-sm mb-8 italic">
-              Quick Links
-            </h4>
+         <div>
+  <h4 className="text-white font-black uppercase tracking-[0.2em] text-sm mb-8 italic">
+    Quick Links
+  </h4>
 
-            <ul className="space-y-4">
-              <li>
-                <a
-                  className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest"
-                  href="/inventory"
-                >
-                  Inventory
-                </a>
-              </li>
+  <ul className="space-y-4">
+    <li>
+      <Link
+        className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest"
+        to="/inventory"
+      >
+        Inventory
+      </Link>
+    </li>
 
-              <li>
-                <a
-                  className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest"
-                  href="/about"
-                >
-                  About Us
-                </a>
-              </li>
+    <li>
+      <Link
+        className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest"
+        to="/about"
+      >
+        About Us
+      </Link>
+    </li>
 
-              <li>
-                <a
-                  className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest"
-                  href="/services"
-                >
-                  Our Services
-                </a>
-              </li>
+    <li>
+      <Link
+        className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest"
+        to="/services"
+      >
+        Our Services
+      </Link>
+    </li>
 
-              <li>
-                <a
-                  className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest"
-                  href="/sell"
-                >
-                  Sell Your Car
-                </a>
-              </li>
-            </ul>
-          </div>
-
+    <li>
+      <Link
+        className="text-gray-400 hover:text-red-600 text-sm font-bold uppercase tracking-widest"
+        to="/sell"
+      >
+        Sell Your Car
+      </Link>
+    </li>
+  </ul>
+</div>
           {/* Contact */}
           <div>
             <h4 className="text-white font-black uppercase tracking-[0.2em] text-sm mb-8 italic">
